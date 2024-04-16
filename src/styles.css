@@ -1,1 +1,127 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content {
+  margin: 5px 5px 0 5px;
+  border-radius: 20px;
+  background: rgb(240, 247, 255);
+  height: 730px;
+}
+
+h1 {
+  color: rgb(64, 64, 64);
+  font-family: "Arima Madurai";
+  font-size: 44.24px;
+  font-weight: 800;
+  line-height: 72px;
+  letter-spacing: 0%;
+}
+
+h3 {
+  color: rgb(64, 64, 64);
+  font-family: "Arima Madurai";
+  font-size: 23.98px;
+  font-weight: 800;
+  line-height: 39px;
+  letter-spacing: 0%;
+}
+
+h4 {
+  color: rgb(150, 150, 150);
+  font-family: "Arima Madurai";
+  font-size: 19.42px;
+  font-weight: 800;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+h4.black {
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  font-size: 19.42px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+h5 {
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  font-size: 15.11px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+
+sup {
+  color: rgb(64, 64, 64);
+  font-family: Roboto;
+  font-size: 10.55px;
+  font-weight: 500;
+  line-height: 12px;
+  background: rgb(240, 247, 255);
+  border-radius: 7px;
+  width: fit-content;
+  border-radius: 7px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+p {
+  color: rgb(150, 150, 150);
+  font-family: Roboto;
+  font-size: 12.95px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+a {
+  color: rgb(150, 150, 150);
+  font-family: Roboto;
+  font-size: 17.53px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration: none;
+}
+.active-link {
+  color: rgb(64, 64, 64);
+}
+
+.white-borders {
+  width: 50vw;
+  height: 520px;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid white;
+  margin-right: 100px;
+}
+
+.sort-by-meal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.sort-by-meal > a {
+  transform: rotate(-90deg);
+}
+
+.recipe-list {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.sort-by-difficulty {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  margin: 0 0 40px 80px;
+}

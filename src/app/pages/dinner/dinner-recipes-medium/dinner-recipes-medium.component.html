@@ -1,0 +1,22 @@
+<div class="content">
+  <div class="recipe-list">
+    <div class="sort-by-meal">
+      <a [routerLink]="'/breakfast'">Breakfast</a>
+      <a [routerLink]="'/lunch'">Lunch</a>
+      <a [routerLink]="'/dinner'" [routerLinkActive]="'active-link'">Dinner</a>
+    </div>
+    @for (recipe of recipeService.mediumDinnerRecipes; track $index) {
+    <app-recipe-item
+      [id]="recipe.id"
+      [image]="recipe.image"
+      [name]="recipe.name"
+      [ingredients]="recipe.ingredients"
+      [calories]="recipe.caloriesPerServing"
+      [rating]="recipe.rating"
+      [prepTime]="recipe.prepTimeMinutes"
+      [cookTime]="recipe.cookTimeMinutes"
+    ></app-recipe-item>
+    }
+  </div>
+  <app-more-recipes></app-more-recipes>
+</div>

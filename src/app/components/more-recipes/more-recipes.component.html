@@ -1,0 +1,10 @@
+<h3>More recipes</h3>
+<div class="more-recipes-list">
+  @for (recipe of recipeService.randomRecipes; track $index) {
+    <div class="more-recipes-item">
+      <img class="random-img" [src]="recipe.image" alt="random-img" />
+      <h5>{{ recipe.name }}</h5>
+      <p>{{ recipe.cookTimeMinutes }} min cooktime</p>
+    </div>
+  }
+</div>
